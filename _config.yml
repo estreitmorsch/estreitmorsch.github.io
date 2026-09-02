@@ -49,7 +49,7 @@ accent_color: '#2d72d9'
 # Site footer
 footer:
   content: "&copy; Eduarda Streit Morsch."
-  has_social: false
+  has_social: true
 
 # Plugins
 plugins:

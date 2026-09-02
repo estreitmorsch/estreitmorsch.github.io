@@ -1,3 +1,29 @@
 {
-  "links": []
+  "links": [
+    {
+      "title": "LinkedIn",
+      "icon": "fa-linkedin",
+      "url": "https://www.linkedin.com/in/eduardastreitmorsch/"
+    },
+    {
+      "title": "Goodreads",
+      "symbol": "G",
+      "url": "https://www.goodreads.com/user/show/32121309-eduarda-morsch"
+    },
+    {
+      "title": "Instagram",
+      "icon": "fa-instagram",
+      "url": "https://www.instagram.com/coffeestainsonpaper/"
+    },
+    {
+      "title": "Fable",
+      "symbol": "F",
+      "url": "https://fable.co/fabler/eduarda-streit-morsch-206372890525?tab=stats"
+    },
+    {
+      "title": "Medium",
+      "icon": "fa-medium",
+      "url": "https://medium.com/@salaiincognita"
+    }
+  ]
 }

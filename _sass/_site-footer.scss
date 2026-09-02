@@ -9,15 +9,34 @@
 .offsite-links {
   margin-bottom: 1.11111em;
   a {
+    align-items: center;
     color: _palette(primary);
-    display: inline-block;
+    display: inline-flex;
     font-size: 18px;
+    justify-content: center;
     margin-right: 15px;
+    min-height: 24px;
+    min-width: 24px;
     text-decoration: none;
     &:hover{
       color: _palette(accent);
     }
   }
+}
+
+.social-symbol {
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-family: _font(primary);
+  font-size: 10px;
+  font-weight: bold;
+  height: 20px;
+  justify-content: center;
+  line-height: 1;
+  width: 20px;
 }
 
 .site-info {

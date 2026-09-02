@@ -23,7 +23,7 @@ function applyTheme(theme) {
     themeToggle.setAttribute('aria-label', isDark ? 'Toggle light mode' : 'Toggle dark mode');
     const icon = themeToggle.querySelector('.theme-toggle__icon');
     if (icon) {
-      icon.textContent = '☾';
+      icon.textContent = isDark ? '☀' : '☾';
     }
   }
 

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Example portfolio project</title>
+  <desc id="description">An abstract illustration of branching neural connections.</desc>
+  <rect width="1200" height="675" fill="#fbfbfb"/>
+  <g fill="none" stroke="#d7d7d7" stroke-width="7">
+    <path d="M130 475 C300 475 310 215 520 215 S760 480 1060 480"/>
+    <path d="M260 345 C400 345 430 515 610 515 S800 250 1010 250"/>
+    <path d="M405 155 C505 155 535 335 690 335 S850 145 980 145"/>
+  </g>
+  <g fill="#2d72d9">
+    <circle cx="130" cy="475" r="22"/>
+    <circle cx="260" cy="345" r="18"/>
+    <circle cx="405" cy="155" r="20"/>
+    <circle cx="520" cy="215" r="24"/>
+    <circle cx="610" cy="515" r="20"/>
+    <circle cx="690" cy="335" r="25"/>
+    <circle cx="980" cy="145" r="18"/>
+    <circle cx="1010" cy="250" r="21"/>
+    <circle cx="1060" cy="480" r="24"/>
+  </g>
+  <text x="600" y="615" fill="#2c343c" font-family="Georgia, serif" font-size="38" text-anchor="middle">Example project</text>
+</svg>

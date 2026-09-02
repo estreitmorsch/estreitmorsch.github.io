@@ -1,0 +1,12 @@
+- title: "Example Project"
+  example: true
+  image: "/images/portfolio-example.svg"
+  description: >
+    This is a clearly marked example project. Replace it with a real research,
+    creative, or professional project.
+  technologies:
+    - Neuroscience
+    - Data analysis
+    - Scientific communication
+  link: "https://github.com/estreitmorsch"
+  link_text: "View example"

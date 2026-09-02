@@ -172,3 +172,54 @@
     font-weight: bold;
   }
 }
+
+/* Portfolio */
+.portfolio-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.portfolio-card {
+  border-bottom: 1px solid _palette(border);
+  padding-bottom: 2rem;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.portfolio-card-image {
+  display: block;
+  margin-bottom: 1.66667em;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.portfolio-card-title {
+  margin-top: 0;
+}
+
+.portfolio-example-label,
+.portfolio-technology {
+  border: 1px solid _palette(border);
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 0.77778rem;
+  margin: 0 5px 5px 0;
+  padding: 3px 10px;
+}
+
+.portfolio-example-label {
+  color: _palette(accent);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.portfolio-technologies {
+  list-style: none;
+  margin-bottom: 1.66667em;
+  padding: 0;
+}

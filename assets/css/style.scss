@@ -53,3 +53,126 @@ $palette: (
 @import "site-footer";
 @import "animations";
 @import "prism";
+
+:root {
+  --bg: #fbfbfb;
+  --bg-strong: #ffffff;
+  --text: #6b747a;
+  --heading: #2c343c;
+  --muted: #9ba6ad;
+  --border: #d7d7d7;
+  --nav-bg: #ffffff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme="dark"] {
+  --bg: #0f172a;
+  --bg-strong: #111827;
+  --text: #dbe3ee;
+  --heading: #f8fafc;
+  --muted: #a5b4c8;
+  --border: #334155;
+  --nav-bg: #111827;
+}
+
+body[data-theme="dark"] .site,
+body[data-theme="dark"] .site-header,
+body[data-theme="dark"] .site-description,
+body[data-theme="dark"] .site-footer,
+body[data-theme="dark"] .site-navigation {
+  background-color: var(--bg-strong);
+}
+
+body[data-theme="dark"] .site-header,
+body[data-theme="dark"] .site-description,
+body[data-theme="dark"] .site-footer,
+body[data-theme="dark"] .site-navigation,
+body[data-theme="dark"] .menu-item {
+  border-color: var(--border);
+}
+
+body[data-theme="dark"] h1,
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3,
+body[data-theme="dark"] h4,
+body[data-theme="dark"] h5,
+body[data-theme="dark"] h6,
+body[data-theme="dark"] .site-title a,
+body[data-theme="dark"] .site-description cite,
+body[data-theme="dark"] .site-tagline,
+body[data-theme="dark"] blockquote,
+body[data-theme="dark"] th {
+  color: var(--heading);
+}
+
+body[data-theme="dark"] p,
+body[data-theme="dark"] li,
+body[data-theme="dark"] td,
+body[data-theme="dark"] .site-description,
+body[data-theme="dark"] .site-tagline,
+body[data-theme="dark"] .image-card figcaption {
+  color: var(--text);
+}
+
+body[data-theme="dark"] a {
+  color: #8ab4ff;
+}
+
+body[data-theme="dark"] a:hover {
+  color: #bfdbfe;
+}
+
+body[data-theme="dark"] .menu-item a,
+body[data-theme="dark"] .site-description cite,
+body[data-theme="dark"] .site-tagline,
+body[data-theme="dark"] .image-card figcaption {
+  color: var(--muted);
+}
+
+body[data-theme="dark"] .site-navigation {
+  background: var(--nav-bg);
+}
+
+body[data-theme="dark"] blockquote {
+  border-left-color: var(--heading);
+}
+
+.theme-toggle {
+  background: var(--bg-strong);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--heading);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  height: 2.5rem;
+  margin-left: 1rem;
+  width: 2.5rem;
+}
+
+.theme-toggle__icon {
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+.about-profile {
+  display: block;
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+  .theme-toggle {
+    margin-left: 0;
+  }
+}

@@ -5,7 +5,7 @@ description: About Eduarda Streit Morsch
 permalink: /about/
 ---
 
-![Eduarda Streit Morsch](/images/estreitmorsch-avatar.jpg)
+<img src="/images/estreitmorsch-avatar.jpg" alt="Eduarda Streit Morsch" class="about-profile" />
 
 A story-teller accostumed to bridging worlds and places.
 

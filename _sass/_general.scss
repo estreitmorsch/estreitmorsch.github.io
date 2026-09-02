@@ -2,6 +2,30 @@
    2. General
    ========================================================================== */
 
+:root {
+  --page-bg: #fbfbfb;
+  --page-surface: #ffffff;
+  --page-text: #6b747a;
+  --page-heading: #2c343c;
+  --page-meta: #9ba6ad;
+  --page-border: #d7d7d7;
+  --page-accent: #2d72d9;
+  --page-code-bg: #f3f4f6;
+  --page-inline-code: #1f2937;
+}
+
+html[data-theme="dark"] {
+  --page-bg: #111827;
+  --page-surface: #1f2937;
+  --page-text: #d1d5db;
+  --page-heading: #f3f4f6;
+  --page-meta: #a5b4c5;
+  --page-border: #374151;
+  --page-accent: #8ab4ff;
+  --page-code-bg: #0f172a;
+  --page-inline-code: #e2e8f0;
+}
+
 html,
 button,
 input,
@@ -13,6 +37,7 @@ textarea {
 html {
   border: 15px solid _palette(accent);
   box-sizing: border-box;
+  background: var(--page-bg);
 
   @media only screen and (max-width: 600px) {
     border-width: 5px;
@@ -21,12 +46,77 @@ html {
 }
 
 body {
-  color: _palette(primary);
+  background: var(--page-bg);
+  color: var(--page-text);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.66667;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+body[data-theme="dark"] {
+  background: var(--page-bg);
+  color: var(--page-text);
+}
+
+body[data-theme="dark"] a {
+  color: var(--page-accent);
+}
+
+body[data-theme="dark"] h1,
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3,
+body[data-theme="dark"] h4,
+body[data-theme="dark"] h5,
+body[data-theme="dark"] h6,
+body[data-theme="dark"] .site-title a,
+body[data-theme="dark"] .site-tagline,
+body[data-theme="dark"] .site-description cite,
+body[data-theme="dark"] .author-location,
+body[data-theme="dark"] .author-website,
+body[data-theme="dark"] .archive-meta,
+body[data-theme="dark"] .post-date,
+body[data-theme="dark"] .post-meta,
+body[data-theme="dark"] .footer-bottom {
+  color: var(--page-heading);
+}
+
+body[data-theme="dark"] .site-header,
+body[data-theme="dark"] .site-description,
+body[data-theme="dark"] .menu-item,
+body[data-theme="dark"] .portfolio-card,
+body[data-theme="dark"] .author-box,
+body[data-theme="dark"] .post,
+body[data-theme="dark"] .site-footer {
+  border-color: var(--page-border);
+}
+
+body[data-theme="dark"] .site-navigation {
+  background: var(--page-bg);
+}
+
+body[data-theme="dark"] .menu-item a {
+  color: var(--page-meta);
+}
+
+body[data-theme="dark"] pre,
+body[data-theme="dark"] :not(pre) > code {
+  background: var(--page-code-bg);
+  border-color: var(--page-border);
+  color: var(--page-inline-code);
+}
+
+body[data-theme="dark"] blockquote {
+  border-left-color: var(--page-border);
+  color: var(--page-heading);
+}
+
+body[data-theme="dark"] .post-share a,
+body[data-theme="dark"] .portfolio-example-label,
+body[data-theme="dark"] .portfolio-technology {
+  border-color: var(--page-border);
+  color: var(--page-heading);
 }
 
 a {

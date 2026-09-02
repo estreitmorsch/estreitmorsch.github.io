@@ -1,9 +1,14 @@
 <header class="site-header">
-  {% if page.url == "/" %}
-  <h1 class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></h1>
-  {% else %}
-  <p class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></p>
-  {% endif %}
+  <div class="site-identity">
+    {% if page.url == "/" %}
+    <h1 class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></h1>
+    {% else %}
+    <p class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></p>
+    {% endif %}
+    {% if site.tagline and site.tagline != "" %}
+    <p class="site-tagline">{{ site.tagline }}</p>
+    {% endif %}
+  </div>
   <nav class="site-navigation">
     <div class="site-navigation-wrap">
       <h2 class="screen-reader-text">Main navigation</h2>
@@ -25,8 +30,11 @@
   <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
 </header>
 
-{% if site.description and site.description != "" and page.url == "/" %}
+{% if site.home_quote and site.home_quote != "" and page.url == "/" %}
 <div class="site-description fadeInDown delay_05s">
-  <p>{{ site.description }}</p>
+  <p>&ldquo;{{ site.home_quote }}&rdquo;</p>
+  {% if site.home_quote_author and site.home_quote_author != "" %}
+  <cite>&mdash; {{ site.home_quote_author }}</cite>
+  {% endif %}
 </div><!-- .site-description -->
 {% endif %}

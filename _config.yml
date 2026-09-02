@@ -37,6 +37,8 @@ navigation:
     url: /portfolio/
   - text: About
     url: /about/
+  - text: Resume/CV
+    url: /resume/
   - text: Tags
     url: /tags/
 

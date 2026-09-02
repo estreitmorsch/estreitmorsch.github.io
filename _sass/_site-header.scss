@@ -92,7 +92,8 @@ body[data-theme="dark"] .theme-toggle {
 .menu {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;

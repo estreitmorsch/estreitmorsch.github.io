@@ -62,3 +62,74 @@ $palette: (
   margin: 0 auto 1.5rem;
   border-radius: 12px;
 }
+
+.resume-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.resume-print {
+  background: transparent;
+  border: 1px solid _palette(border);
+  border-radius: 3px;
+  color: _palette(meta);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.88889rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.resume-print:hover {
+  border-color: _palette(accent);
+  color: _palette(accent);
+}
+
+@media print {
+  @page {
+    margin: 1.5cm;
+  }
+
+  html {
+    border: 0;
+  }
+
+  body {
+    color: #000;
+    padding: 0;
+  }
+
+  .site-header,
+  .site-footer,
+  .resume-actions {
+    display: none;
+  }
+
+  .main-content,
+  .post {
+    margin: 0;
+    max-width: none;
+    width: auto;
+  }
+
+  .post-content a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    break-after: avoid;
+  }
+
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+}

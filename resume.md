@@ -5,6 +5,9 @@ description: Resume and CV of Eduarda Streit Morsch
 permalink: /resume/
 ---
 
+<div class="resume-actions">
+  <button type="button" class="resume-print" onclick="window.print()">Print / Save as PDF</button>
+</div>
 
 ## Education
 
@@ -15,7 +18,7 @@ permalink: /resume/
 
 ## Art training 
 - [2025] [Viktoria Maliar](https://www.viktoriamaliar.com/) Art Retreat - Costa Brava, Spain
-- [2024-2026] Several painting workshops and courses under [Valeria Gogina](https://valeriagogina.ch)
+- [2024-2026] Several painting workshops and courses under [Valeria Gogina](https://valeriagogina.ch) - Zurich, Switzerland
 - [2017] Oil and Acrylics painting with [Accademia del Giglio](https://adg.it/it/), Florence, Italy
 - [2014] Plein-air watercolor and sketching course with [Caterine Moullé](https://quatrinaime.blogspot.com/), Provence, France
 
